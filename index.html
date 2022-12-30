@@ -5,13 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-            p {
+            p, h2 {
                 color:rgb(55, 49, 49);
-                font-size: 1rem;
+                text-align: center;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            td{
+                border: 1px solid #c7c5c5;
+                color:rgb(86, 77, 77);
+                text-align: left;
+                padding: 7px;
+            }
+            th{
+                border: 1px solid #c7c5c5;
+                color:rgb(86, 77, 77);
+                font-size: 0.7rem;
                 font-family: Arial, Helvetica, sans-serif;
                 font-style: Sans-serif;
+                text-align: left;
+                padding: 7px;
+                width: 350px;
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            a {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
                 text-align: center;
-                background-color: rgb(253, 252, 251);
+                color: rgb(255, 255, 255);
+            }
+            a  span.border{
+                background-color: rgb(84, 82, 82);
+                padding: 18px;
+                font-size: 19px;
+                letter-spacing: 7px;
+                opacity: 0.85;
             }
             .caption {
                 position: absolute;
@@ -28,7 +62,7 @@
                 letter-spacing: 10px;
                 opacity: 0.85;
             }
-            .img1, .img2 {
+            .img1, .img2, .img3 {
                 position: relative;
                 opacity: 0.65;
                 background-attachment: fixed;
@@ -41,31 +75,84 @@
                 min-height: 400px;
             }
             .img2 {
-                background-image: url("steampunk.jpg");
-                min-height: 400px;
+                background-image: url("hmtl.jpg");
+                min-height: 350px;
+            }
+            .img3 {
+                background-image: url("wave.jpg");
+                min-height: 200px;
             }
             @media only screen and (max-device-width: 1024px) {
                 .img1, .img2 {
                     background-attachment: scroll;
                 }
             }
-
-
-
         </style>
     </head>
 
     <body>
         <div class="img1">
            <div class="caption">
-            <span class="border">  Testi </span>
+            <span class="border">
+                Welcome!
+            </span>
            </div>
         </div>
-        <p> The EU imposed its sanctions "in the absence of de-escalatory steps by the Russian Federation" in order to bring an end to the violence in eastern Ukraine. The EU at the same time clarified that the union "remains ready to reverse its decisions and reengage with Russia when it starts contributing actively and without ambiguities to finding a solution to the Ukrainian crisis".</p>
-        <div class="img2">
-           
-        </div>
-        <p> United States of conspiring with Saudi Arabia to intentionally weaken the Russian economy by decreasing the price of oil. By mid-2016, Russia had lost an estimated $170 billion due to financial sanctions, with another $400 billion in lost revenues from oil and gas. According to Ukrainian officials </p>
+        <br>
+        <p>Here are my top 3 information technology courses;</p>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Content</th>
+                <th>Learning outcomes</th>
+            </tr>
+            <tr>
+                <th>Introduction to Computer Systems</th>
+                <th>Overview of computer architecture and CPU, memory management, interrupts, registers and I/O, embedded systems programming</th>
+                <th>Understanding of the basics of computer architecture and CPU operation. Student can implement programs with C for embedded systems. </th>
+            </tr>
+            <tr>
+                <th>Digital Techniques 1</th>
+                <th>The principle of a digital device; Boolean algebra; representation of the numbers; combinational logic operation, analysis and synthesis</th>
+                <th>Student is able to use the features Boolean algebra adapted for switching algebra, to design and analyze simple combinational and sequential logic circuits.</th>
+            </tr>
+            <tr>
+                <th>Programming 1</th>
+                <th> Problem solving, control structures, modular programming, communication between modules, data types, arrays, pointers, data structures, storing data.</th>
+                <th>Student knows the metrics used in software engineering and is able to apply them. Documenting the program. Programming with C</th>
+            </tr>
+        </table>
 
+        <div class="img3"></div>
+        <br>
+        <p>These are topics I am going to deepen my knowledge on during spring 2023</p>
+
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Content</th>
+                <th>Learning outcomes</th>
+            </tr>
+            <tr>
+                <th>Software Engineering</th>
+                <th>Agile software development. Project management: design, metrics, risk management, resource management, follow up, quality control, product control</th>
+                <th>Student knows the different areas of project management, the phases of software development. Familiar with metrics used in software engineering and is able to apply them</th>
+            </tr>
+            <tr>
+                <th>Artificial Intelligence</th>
+                <th>Intelligent agent types, uninformed search methods, informed search, local search, constraint satisfaction problems, uncertainty handling, probabilistic reasoning</th>
+                <th>Understands the fundamentals of machine learning. Student is familiar with advanced AI applications of perception and robotics.</th>
+            </tr>
+            <tr>
+                <th>Programming 2</th>
+                <th>Version control and unit testing. The concept of an object, encapsulation, composition, inheritance, polymorphism, exceptions, UML charts</th>
+                <th>Principles of object paradigm, generics, and design patterns and utilising these concepts when creating software. Programming with Java</th>
+            </tr>
+        </table>
+
+        <div class="img2"> 
+            <a href="https://www.linkedin.com/in/jasminma/"><span class="border">Contact me via LinkedIn!</span></a> 
+        </div>
+       
     </body>
 </html>
